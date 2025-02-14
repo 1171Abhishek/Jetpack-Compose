@@ -48,6 +48,10 @@ fun ButtonFunction(modifier: Modifier = Modifier) {
     }
 }
 
+/* Button Preference Order:
+    Elevated > Filled > Filled Tonal > Outlined > Text
+ */
+
 @Preview(showSystemUi = true)
 @Composable
 fun ButtonFunctionPreview() {
