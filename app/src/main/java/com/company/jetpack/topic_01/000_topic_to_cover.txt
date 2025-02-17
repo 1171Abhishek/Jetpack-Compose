@@ -1,9 +1,7 @@
-package com.company.jetpack.topic_01
+These are the topics which i have to cover
 
-/*
 .align
 vertical alignment
 horizontal alignment
 content alignment
 padding
- */
