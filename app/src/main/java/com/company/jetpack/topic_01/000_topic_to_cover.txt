@@ -5,3 +5,5 @@ vertical alignment
 horizontal alignment
 content alignment
 padding
+content scale
+
