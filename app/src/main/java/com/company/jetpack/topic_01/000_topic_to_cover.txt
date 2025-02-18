@@ -4,6 +4,5 @@ These are the topics which i have to cover
 vertical alignment
 horizontal alignment
 content alignment
-padding
 content scale
 
