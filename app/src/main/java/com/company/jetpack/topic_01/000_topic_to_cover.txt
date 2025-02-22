@@ -1,9 +1,1 @@
-These are the topics which i have to cover
-
-.align
-vertical alignment
-horizontal alignment
-content alignment
-content scale
-
-
+I have completed all topics, and there are no remaining topics to cover.
