@@ -11,6 +11,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.company.jetpack.topic_01.PractiseFive
+import com.company.jetpack.topic_01.PractiseFour
 import com.company.jetpack.topic_01.PractiseOne
 import com.company.jetpack.topic_01.Practise_Two
 import com.company.jetpack.ui.theme.JetpackComposeTheme
@@ -22,7 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Practise_Two(
+                    PractiseFive(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
