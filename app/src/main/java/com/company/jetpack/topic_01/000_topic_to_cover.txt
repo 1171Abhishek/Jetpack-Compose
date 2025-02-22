@@ -5,6 +5,5 @@ vertical alignment
 horizontal alignment
 content alignment
 content scale
-icon
 
 
