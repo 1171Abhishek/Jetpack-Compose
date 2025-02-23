@@ -1,4 +1,5 @@
-package com.company.jetpack.topic_01
+package com.company.jetpack.topic_02
+
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
