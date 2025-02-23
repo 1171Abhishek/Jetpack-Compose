@@ -7,16 +7,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.company.jetpack.topic_01.PractiseFive
-import com.company.jetpack.topic_01.PractiseFour
-import com.company.jetpack.topic_01.PractiseOne
-import com.company.jetpack.topic_01.Practise_Two
 import com.company.jetpack.topic_02.DiceRollerApp
-import com.company.jetpack.topic_02.Lemonade
 import com.company.jetpack.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Lemonade(
+                    DiceRollerApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -34,4 +26,5 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
 
