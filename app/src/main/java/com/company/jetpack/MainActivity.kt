@@ -16,6 +16,7 @@ import com.company.jetpack.topic_01.PractiseFour
 import com.company.jetpack.topic_01.PractiseOne
 import com.company.jetpack.topic_01.Practise_Two
 import com.company.jetpack.topic_02.DiceRollerApp
+import com.company.jetpack.topic_02.Lemonade
 import com.company.jetpack.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    DiceRollerApp(
+                    Lemonade(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
