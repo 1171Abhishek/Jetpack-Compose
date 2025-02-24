@@ -1,4 +1,4 @@
-var result by remember { mutableStateOf(1) }
 debugger
 weight
+verticalScroll
 
