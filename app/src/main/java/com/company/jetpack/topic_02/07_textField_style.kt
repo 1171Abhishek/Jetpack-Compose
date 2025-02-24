@@ -24,7 +24,8 @@ fun TextFieldStyle(modifier: Modifier = Modifier) {
             value = name,
             onValueChange = { name = it },
             label = { Text("Name") }, // Label which is shown when the text field is empty.
-            maxLines = 2, // Maximum number of lines in the text field.
+//            maxLines = 2, // Maximum number of lines in the text field.
+            singleLine = true, // Text field should be a single line.
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number) // Which keyboard to use.
 //            This can be number , text , email , ascii etc.
 
