@@ -1,4 +1,5 @@
 debugger
 weight
-verticalScroll
+verticalScroll -> Add support for landscape orientation
+
 
