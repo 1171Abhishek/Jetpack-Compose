@@ -16,6 +16,7 @@ import com.company.jetpack.topic_02.SimpleTipCalculator
 import com.company.jetpack.topic_02.SwitchButtonFunction
 import com.company.jetpack.topic_02.TextFieldStyle
 import com.company.jetpack.topic_02.UserInputFunction
+import com.company.jetpack.topic_03.ScrollFunction
 import com.company.jetpack.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,7 +26,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AlbumFunction(
+                    ScrollFunction(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
