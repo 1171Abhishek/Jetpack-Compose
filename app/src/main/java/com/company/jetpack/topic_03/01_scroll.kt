@@ -15,6 +15,12 @@ import androidx.compose.ui.unit.dp
 import com.company.jetpack.topic_03.scroll_affirmation.Affirmation
 import com.company.jetpack.topic_03.scroll_data.DataSource
 
+/** Structure
+ *  1. Create a data class -> In new package
+ *  2. Create a DataSource class -> In new package
+ *  3. Create a composable function -> In new kotlin file
+ */
+
 // This function is used to display images and text
 @Composable
 fun ScrollFunction(modifier: Modifier) {
