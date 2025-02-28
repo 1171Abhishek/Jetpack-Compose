@@ -40,6 +40,7 @@ fun GridFunction(modifier: Modifier = Modifier) {
 //    LazyVerticalGrid
 
     LazyVerticalGrid(
+//        Use LazyVerticalGrid to create a vertically scrolling grid.
 //        GridCells.Fixed(n): Defines a fixed number of columns.
 
         columns = GridCells.Fixed(3) // 2 Column
