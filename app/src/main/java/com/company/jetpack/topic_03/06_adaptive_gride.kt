@@ -20,31 +20,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-/**
- * A grid is a layout system that arranges items in rows and columns for better organization,
- * alignment, and efficient use of space. In Jetpack Compose, grids are implemented using
- * `LazyVerticalGrid` and `LazyHorizontalGrid` to display lists efficiently. 🚀
- */
-/*  2 x 2 Grid
-[ Item 1 ]  [ Item 2 ]
-[ Item 3 ]  [ Item 4 ]
-
-3 x 2 Grid
-[ Item 1 ]  [ Item 2 ]  [ Item 3 ]
-[ Item 4 ]  [ Item 5 ]  [ Item 6 ]
-
- */
-
 @Composable
-fun GridFunction(modifier: Modifier = Modifier) {
-//    LazyVerticalGrid
-
+fun LazyVerticalAdaptiveGrid(modifier: Modifier = Modifier) {
     LazyVerticalGrid(
-//        Use LazyVerticalGrid to create a vertically scrolling grid.
-//        GridCells.Fixed(n): Defines a fixed number of columns.
-//        Vertical -> Column
+//        If you want the number of columns to adjust based on screen width, use GridCells.Adaptive(minSize).
+//        in verticalScrollGrid -> minSize set -> width of each column
+//        in horizontalScrollGrid -> minSize set -> height of each row
 
-        columns = GridCells.Fixed(3) // 2 Column
+        columns = GridCells.Adaptive(minSize = 100.dp)
     ) {
         items(100) {
             Box(
@@ -74,6 +57,6 @@ fun GridFunction(modifier: Modifier = Modifier) {
 
 @Preview(showSystemUi = true)
 @Composable
-fun GridFunctionPreview() {
-    GridFunction()
+fun LazyVerticalAdaptiveGridPreview() {
+    LazyVerticalAdaptiveGrid()
 }

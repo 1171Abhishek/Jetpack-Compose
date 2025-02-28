@@ -10,6 +10,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.company.jetpack.topic_03.GridFunction
 import com.company.jetpack.topic_03.LazyHorizontalGridFunction
+import com.company.jetpack.topic_03.LazyVerticalAdaptiveGrid
+import com.company.jetpack.topic_03.LazyVerticalAdaptiveGridPreview
 import com.company.jetpack.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LazyHorizontalGridFunction(
+                    LazyVerticalAdaptiveGrid(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

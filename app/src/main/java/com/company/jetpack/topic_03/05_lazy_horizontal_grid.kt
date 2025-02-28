@@ -18,6 +18,7 @@ fun LazyHorizontalGridFunction(modifier: Modifier = Modifier) {
     LazyHorizontalGrid(
 //        If you need a horizontally scrolling grid, use LazyHorizontalGrid.
 //        Uses rows = GridCells.Fixed(n) instead of columns.
+//        Horizontal -> Row
         rows = GridCells.Fixed(3)
     ) {
         items(100) {
