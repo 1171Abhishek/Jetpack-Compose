@@ -12,6 +12,7 @@ import com.company.jetpack.topic_03.GridFunction
 import com.company.jetpack.topic_03.LazyHorizontalGridFunction
 import com.company.jetpack.topic_03.LazyVerticalAdaptiveGrid
 import com.company.jetpack.topic_03.LazyVerticalAdaptiveGridPreview
+import com.company.jetpack.topic_03.LearnShapes
 import com.company.jetpack.ui.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    LazyVerticalAdaptiveGrid(
+                    LearnShapes(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
