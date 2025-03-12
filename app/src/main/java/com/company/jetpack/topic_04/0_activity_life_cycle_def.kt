@@ -24,31 +24,43 @@ Activity Lifecycle.
 6️⃣ `onDestroy()` → Activity is fully removed from memory (app closed).
 
 ✅ Each Activity has its own lifecycle, and Android manages it automatically.
- */
+
 
 /*
 Think of an Activity like a Human Life 👶➡️👨‍💼➡️👴
 Just like a human goes through different stages of life, an Activity goes through different stages in an app.
 
 Stages of Activity Lifecycle
-1️⃣ Birth (onCreate) 👶 → Activity is born (created).
-2️⃣ Awake (onStart) 🌞 → Activity is visible, but not interactive.
-3️⃣ Active (onResume) 🏃 → Activity is fully active, user can interact.
-4️⃣ Paused (onPause) ⏸ → Activity is still visible, but not interactive (e.g., a popup appears).
-5️⃣ Sleeping (onStop) 💤 → Activity is completely hidden, but still in memory.
-6️⃣ Death (onDestroy) ☠️ → Activity is fully removed from memory.
+Stages of Activity Lifecycle
+
+1️⃣ Birth (`onCreate()`) 👶 → Activity is created.
+2️⃣ Awake (`onStart()`) 🌞 → Activity is visible, but not interactive.
+3️⃣ Active (`onResume()`) 🏃 → Activity is fully active, user can interact.
+4️⃣ Paused (`onPause()`) ⏸ → Activity is visible, but not interactive (e.g., popup appears).
+5️⃣ Sleeping (`onStop()`) 💤 → Activity is completely hidden, but still in memory.
+6️⃣ Restart (`onRestart()`) 🔄 → Activity was stopped but is coming back.
+7️⃣ Death (`onDestroy()`) ☠️ → Activity is fully removed from memory.
 
 Example in Real Life 🎬
 Imagine you open YouTube on your phone:
 
-📱 YouTube app opens → onCreate()
-🎥 You see the home screen → onStart()
-🎬 You start watching a video → onResume()
-📞 A call comes (YouTube pauses) → onPause()
-🔙 You minimize the app → onStop()
-❌ You close YouTube completely → onDestroy()
- */
-/*
+📱 YouTube app opens → `onCreate()`
+🎥 You see the home screen → `onStart()`
+🎬 You start watching a video → `onResume()`
+📞 A call comes (YouTube pauses) → `onPause()`
+🔙 You minimize the app → `onStop()`
+↩️ You reopen YouTube from recent apps → `onRestart()` → `onStart()` → `onResume()`
+❌ You close YouTube completely → `onDestroy()`
+
+
+
+When is onRestart() Called?
+onRestart() is triggered in these cases:
+✅ App is minimized (user presses the home button).
+✅ User switches to another app (e.g., opens WhatsApp while YouTube is running).
+✅ Phone is locked (screen turns off, and the activity goes into the background).
+
+
 
 _________________________________________________________________________________________________
 |     Feature       | `onPause()`                          | `onStop()`                         |
